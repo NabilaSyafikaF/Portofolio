@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nabila Syafika Firdaus | Portofolio</title>
+<meta name="description" content="Portofolio interaktif Nabila Syafika Firdaus, lulusan SMK Teknik Komputer dan Jaringan (TKJ) yang berbasis di Rangkasbitung.">
+<meta name="theme-color" content="#245edb">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ===== Kumpulan ikon (sprite) ===== -->
+<svg id="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gIconBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6ba4ea"/><stop offset="1" stop-color="#2f6fd8"/>
+    </linearGradient>
+    <linearGradient id="gIconGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7cc36a"/><stop offset="1" stop-color="#3d8f3d"/>
+    </linearGradient>
+    <linearGradient id="gSilver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d9d9d1"/>
+    </linearGradient>
+    <linearGradient id="gScreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fb4e8"/><stop offset="1" stop-color="#1f5fc0"/>
+    </linearGradient>
+    <linearGradient id="gFolderFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffdf73"/><stop offset="1" stop-color="#f6b733"/>
+    </linearGradient>
+    <linearGradient id="gSkyIcon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9cc8ec"/><stop offset="1" stop-color="#5e9ed3"/>
+    </linearGradient>
+  </defs>
+
+  <symbol id="i-flag" viewBox="0 0 32 32">
+    <g transform="skewY(-6)">
+      <path fill="#f25022" d="M4 9.5c4-1.2 8-1.2 12 0v6c-4-1.2-8-1.2-12 0z"/>
+      <path fill="#7fba00" d="M16 9.5c4-1.2 8-1.2 12 0v6c-4-1.2-8-1.2-12 0z"/>
+      <path fill="#00a4ef" d="M4 15.5c4-1.2 8-1.2 12 0v6c-4-1.2-8-1.2-12 0z"/>
+      <path fill="#ffb900" d="M16 15.5c4-1.2 8-1.2 12 0v6c-4-1.2-8-1.2-12 0z"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-about" viewBox="0 0 32 32">
+    <rect x="4" y="5" width="24" height="22" rx="2.5" fill="#fdfdfb" stroke="#8b8b83"/>
+    <rect x="4" y="5" width="24" height="7" rx="2.5" fill="url(#gIconBlue)"/>
+    <circle cx="16" cy="18" r="3.6" fill="#3a6ea5"/>
+    <path d="M10 25.5c1.2-4.6 10.8-4.6 12 0z" fill="#3a6ea5"/>
+  </symbol>
+
+  <symbol id="i-folder" viewBox="0 0 32 32">
+    <path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h7.2l2.8 2.8h11A2.5 2.5 0 0 1 29 11.3V24a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="#d9a013"/>
+    <path d="M3 12h26v11.6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="url(#gFolderFront)"/>
+    <path d="M3 12h26v2H3z" fill="#fff3c4" opacity="0.65"/>
+  </symbol>
+
+  <symbol id="i-book" viewBox="0 0 32 32">
+    <path d="M4 6.4h8.6L16 8.6l3.4-2.2H28v19.2h-8.6L16 27.8l-3.4-2.2H4z" fill="#2f5f9c"/>
+    <path d="M5.5 7.8h7.2L15.2 10v15.2l-2.5-1.7H5.5zM26.5 7.8h-7.2L16.8 10v15.2l2.5-1.7h7.2z" fill="#f4f8fd"/>
+    <path d="M15.2 10h1.6v15.4h-1.6z" fill="#d9dee6"/>
+    <path d="M21 8.6v6.8l1.6-1.5 1.6 1.5V7.6z" fill="#d3382a"/>
+  </symbol>
+
+  <symbol id="i-mail" viewBox="0 0 32 32">
+    <rect x="3" y="8.5" width="26" height="16.5" rx="2" fill="url(#gSilver)" stroke="#8b93a1"/>
+    <path d="M3.4 9.4 16 18.2 28.6 9.4" fill="#f7f9fc" stroke="#93a0b0" stroke-width="0.8"/>
+    <path d="M4 24.4l8.6-7M28 24.4l-8.6-7" stroke="#b3bccb" stroke-width="1"/>
+  </symbol>
+
+  <symbol id="i-picture" viewBox="0 0 32 32">
+    <rect x="4" y="5" width="24" height="22" rx="2" fill="#fdfdfb" stroke="#8b8b83"/>
+    <rect x="6.5" y="7.5" width="19" height="13" fill="url(#gSkyIcon)"/>
+    <circle cx="11" cy="11.5" r="2" fill="#ffe9a0"/>
+    <path d="M6.5 18 12 13l4 3.8L20.5 12l5 4.2v4.3h-19z" fill="#4f8f1f"/>
+    <rect x="6.5" y="23.5" width="12" height="1.6" rx="0.8" fill="#c9c9c2"/>
+  </symbol>
+
+  <symbol id="i-bin" viewBox="0 0 32 32">
+    <path d="M7.5 10 9.4 26a2.2 2.2 0 0 0 2.2 2h8.8a2.2 2.2 0 0 0 2.2-2L24.5 10z" fill="#a9cdf2" fill-opacity="0.72" stroke="#5b7fb5"/>
+    <ellipse cx="16" cy="10" rx="8.6" ry="2.8" fill="#cfe4f8" stroke="#5b7fb5"/>
+    <path d="M13.2 21 16.4 15.4 19.6 21z" fill="#4f8f1f"/>
+    <path d="M11.5 23.6h9" stroke="#7fa6d4" stroke-width="1.2" fill="none"/>
+  </symbol>
+
+  <symbol id="i-file" viewBox="0 0 32 32">
+    <path d="M7 4h12l6 6v18H7z" fill="#fdfdfb" stroke="#8b8b83"/>
+    <path d="M19 4l6 6h-6z" fill="#d8d8d0" stroke="#8b8b83"/>
+    <path d="M10 14h12M10 18h12M10 22h8" stroke="#9a9a92" stroke-width="1.2"/>
+  </symbol>
+
+  <symbol id="i-cat" viewBox="0 0 32 32">
+    <path d="M8 4.5 12.3 8.8h7.4L24 4.5l1.6 8.7a9.6 9.6 0 1 1-19.2 0z" fill="#f6c454" stroke="#c9892b" stroke-width="1"/>
+    <circle cx="12.4" cy="16.4" r="1.5" fill="#3a3a3a"/>
+    <circle cx="19.6" cy="16.4" r="1.5" fill="#3a3a3a"/>
+    <path d="M14.6 20.6 16 21.8l1.4-1.2" fill="none" stroke="#3a3a3a" stroke-width="1.1" stroke-linecap="round"/>
+    <path d="M4.4 15h3.2M4.6 18.4l3.2-.6M27.6 15h-3.2M27.4 18.4l-3.2-.6" stroke="#c9892b" stroke-width="0.9" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="i-terminal" viewBox="0 0 32 32">
+    <rect x="3" y="5" width="26" height="22" rx="2" fill="#1b1b1f" stroke="#4a4a52"/>
+    <rect x="3" y="5" width="26" height="4.5" rx="2" fill="#3a3a44"/>
+    <path d="M7 14l4 3-4 3" fill="none" stroke="#c9c9c9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M13 21.5h6" stroke="#c9c9c9" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="i-display" viewBox="0 0 32 32">
+    <rect x="3" y="5" width="26" height="18" rx="2" fill="#dcdcd4" stroke="#8b8b83"/>
+    <rect x="5" y="7" width="22" height="14" rx="1" fill="url(#gScreen)"/>
+    <path d="M5 7h9L5 16z" fill="#ffffff" opacity="0.16"/>
+    <path d="M12 23h8l1 3H11z" fill="#b9b9b1" stroke="#8b8b83"/>
+    <rect x="9" y="26.5" width="14" height="2" rx="1" fill="#9c9c94"/>
+  </symbol>
+
+  <symbol id="i-help" viewBox="0 0 32 32">
+    <circle cx="16" cy="16" r="13" fill="url(#gIconBlue)" stroke="#1244b8"/>
+    <text x="16" y="22.4" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff" font-family="Tahoma, Verdana, sans-serif">?</text>
+  </symbol>
+
+  <symbol id="i-user" viewBox="0 0 32 32">
+    <circle cx="16" cy="11" r="6" fill="url(#gIconBlue)" stroke="#1244b8"/>
+    <path d="M4 28c2-7 22-7 24 0z" fill="url(#gIconBlue)" stroke="#1244b8"/>
+  </symbol>
+
+  <symbol id="i-power" viewBox="0 0 32 32">
+    <circle cx="16" cy="16" r="11.5" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path d="M16 4.5V15" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="i-standby" viewBox="0 0 32 32">
+    <path d="M21 5a12 12 0 1 0 7 18 10 10 0 0 1-7-18z" fill="#f7d35a" stroke="#d3ab2c"/>
+  </symbol>
+
+  <symbol id="i-restart" viewBox="0 0 32 32">
+    <path d="M16.5 6a10 10 0 1 1-9.7 7.6" fill="none" stroke="#3aa23a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M6.2 4.2v9h9z" fill="#3aa23a"/>
+  </symbol>
+
+  <symbol id="i-sound" viewBox="0 0 32 32">
+    <path d="M5 12h5l6-5v18l-6-5H5z" fill="currentColor"/>
+    <path d="M20 11a6 6 0 0 1 0 10M23.5 8a10.5 10.5 0 0 1 0 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="i-mute" viewBox="0 0 32 32">
+    <path d="M5 12h5l6-5v18l-6-5H5z" fill="currentColor"/>
+    <path d="M20.5 12.5l6 6M26.5 12.5l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M17 24l12-12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity="0.55"/>
+  </symbol>
+
+  <symbol id="i-net" viewBox="0 0 32 32">
+    <rect x="2.5" y="13" width="14" height="10" rx="1.5" fill="#e8e8e0" stroke="#8a8a82"/>
+    <rect x="4.5" y="15" width="10" height="6" fill="url(#gScreen)"/>
+    <rect x="15" y="6" width="14" height="10" rx="1.5" fill="#e8e8e0" stroke="#8a8a82"/>
+    <rect x="17" y="8" width="10" height="6" fill="url(#gScreen)"/>
+    <path d="M20 16v3h-9" fill="none" stroke="#8a8a82" stroke-width="1.2"/>
+  </symbol>
+
+  <symbol id="i-cash" viewBox="0 0 32 32">
+    <rect x="3" y="9" width="26" height="14" rx="2" fill="#c4e6c4" stroke="#4d8f4d"/>
+    <circle cx="16" cy="16" r="4" fill="#f6f6ee" stroke="#4d8f4d"/>
+    <path d="M7 12h3M22 20h3" stroke="#4d8f4d" stroke-width="1.4"/>
+  </symbol>
+
+  <symbol id="i-gear" viewBox="0 0 32 32">
+    <g fill="#7d8a99">
+      <rect x="14" y="3" width="4" height="26" rx="1.6"/>
+      <rect x="3" y="14" width="26" height="4" rx="1.6"/>
+      <rect x="14" y="3" width="4" height="26" rx="1.6" transform="rotate(45 16 16)"/>
+      <rect x="14" y="3" width="4" height="26" rx="1.6" transform="rotate(-45 16 16)"/>
+    </g>
+    <circle cx="16" cy="16" r="9" fill="#9fb0c0" stroke="#7d8a99"/>
+    <circle cx="16" cy="16" r="4" fill="#3a4a5a"/>
+  </symbol>
+
+  <symbol id="i-clipboard" viewBox="0 0 32 32">
+    <rect x="7" y="5" width="18" height="24" rx="2" fill="#f4f2e8" stroke="#8b8b83"/>
+    <rect x="12" y="3" width="8" height="5" rx="1.5" fill="#b9b9b1" stroke="#8b8b83"/>
+    <path d="M11 12h10M11 16h10M11 20h7" stroke="#9a9a92" stroke-width="1.3"/>
+    <path d="M20 24l5-5 1.8 1.8-5 5-2.4.6z" fill="#f2c94c" stroke="#c9a12e" stroke-width="0.6"/>
+  </symbol>
+
+  <symbol id="i-pen" viewBox="0 0 32 32">
+    <path d="M6 26l2-8L22 4l6 6-14 14z" fill="#7fb4e8" stroke="#2f5f9c"/>
+    <path d="M8 18l6 6" stroke="#ffffff" stroke-width="1.4"/>
+    <circle cx="7" cy="25" r="2.4" fill="#2f5f9c"/>
+  </symbol>
+
+  <symbol id="i-min" viewBox="0 0 12 12"><rect x="2" y="7.5" width="7" height="2" rx="0.5" fill="currentColor"/></symbol>
+  <symbol id="i-max" viewBox="0 0 12 12">
+    <rect x="2" y="2.5" width="7" height="6.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="2" y="2.5" width="7" height="2" rx="1" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-restore" viewBox="0 0 12 12">
+    <rect x="4.5" y="1.5" width="6" height="5.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.1"/>
+    <rect x="1.5" y="5" width="6" height="5.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.1"/>
+  </symbol>
+  <symbol id="i-close" viewBox="0 0 12 12">
+    <path d="M2.5 2.5l7 7M9.5 2.5l-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<!-- ===== Layar sebelum desktop ===== -->
+<section id="power" class="screen" aria-label="Layar mati">
+  <div class="power-inner">
+    <p class="power-brand">NabilaXP</p>
+    <button id="power-btn" class="power-btn" aria-label="Hidupkan komputer">
+      <svg class="power-glyph" aria-hidden="true"><use href="#i-power"/></svg>
+    </button>
+    <p class="power-hint">Klik untuk menghidupkan komputer</p>
+  </div>
+</section>
+
+<section id="boot" class="screen" hidden aria-label="Proses boot">
+  <div class="boot-inner">
+    <div class="boot-logo">
+      <svg class="boot-flag" aria-hidden="true"><use href="#i-flag"/></svg>
+      <div class="boot-name">NabilaXP<span>Edition</span></div>
+    </div>
+    <div class="boot-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+    <p class="boot-hint">Memuat portofolio, sebentar ya. Klik di mana saja untuk mempercepat.</p>
+  </div>
+</section>
+
+<section id="welcome" class="screen" hidden aria-label="Layar masuk">
+  <div class="welcome-top">
+    <svg class="welcome-flag" aria-hidden="true"><use href="#i-flag"/></svg>
+    <span>NabilaXP</span>
+  </div>
+  <div class="welcome-mid">
+    <button id="enter-btn" class="welcome-user">
+      <img src="assets/img/photo.jpg" alt="Foto Nabila Syafika Firdaus">
+      <span class="welcome-name">Nabila Syafika Firdaus</span>
+      <span class="welcome-hint">Klik untuk masuk</span>
+    </button>
+  </div>
+  <div class="welcome-foot">
+    <p id="welcome-note">Setelah masuk: klik dua kali ikon untuk membuka jendela, atau ikuti tur bersama Mochi.</p>
+  </div>
+</section>
+
+<section id="standby" class="screen" hidden aria-label="Mode standby">
+  <p class="standby-zzz">Z z z . . .</p>
+  <p class="standby-hint">Komputer sedang beristirahat. Klik di mana saja untuk membangunkan.</p>
+</section>
+
+<!-- ===== Desktop ===== -->
+<div id="desk" hidden>
+  <div class="wallpaper" aria-hidden="true"></div>
+
+  <div id="icons" aria-label="Ikon desktop">
+    <button class="dicon" data-open="about">
+      <svg class="dicon-img" aria-hidden="true"><use href="#i-about"/></svg><span>Tentang Saya</span>
+    </button>
+    <button class="dicon" data-open="exp">
+      <svg class="dicon-img" aria-hidden="true"><use href="#i-folder"/></svg><span>Pengalaman Kerja</span>
+    </button>
+    <button class="dicon" data-open="edu">
+      <svg class="dicon-img" aria-hidden="true"><use href="#i-book"/></svg><span>Pendidikan &amp; Keahlian</span>
+    </button>
+    <button class="dicon" data-open="contact">
+      <svg class="dicon-img" aria-hidden="true"><use href="#i-mail"/></svg><span>Kontak</span>
+    </button>
+    <button class="dicon" data-open="photo">
+      <svg class="dicon-img" aria-hidden="true"><use href="#i-picture"/></svg><span>Foto Saya</span>
+    </button>
+    <button class="dicon" data-open="tour">
+      <svg class="dicon-img" aria-hidden="true"><use href="#i-cat"/></svg><span>Tur Cerita</span>
+    </button>
+    <button class="dicon" data-open="recycle">
+      <svg class="dicon-img" aria-hidden="true"><use href="#i-bin"/></svg><span>Tempat Sampah</span>
+    </button>
+  </div>
+
+  <div id="windowlayer"></div>
+
+  <div id="taskbar">
+    <button id="startbtn" aria-haspopup="true" aria-expanded="false" aria-controls="startmenu">
+      <svg class="flag" aria-hidden="true"><use href="#i-flag"/></svg><span class="start-word">start</span>
+    </button>
+    <div id="tasklist" aria-label="Jendela yang terbuka"></div>
+    <div id="tray">
+      <button id="tray-sound" class="traybtn" aria-pressed="false" title="Suara aktif. Klik untuk senyapkan.">
+        <svg aria-hidden="true"><use href="#i-sound"/></svg>
+      </button>
+      <div id="tray-net" title="Terhubung ke jaringan lokal"><svg aria-hidden="true"><use href="#i-net"/></svg></div>
+      <button id="tray-showdesk" class="traybtn" aria-pressed="false" title="Tampilkan desktop">
+        <svg aria-hidden="true"><use href="#i-display"/></svg>
+      </button>
+      <div id="clock" title="">--:--</div>
+    </div>
+  </div>
+
+  <div id="startmenu" hidden>
+    <div class="sm-head">
+      <img class="sm-avatar" src="assets/img/photo.jpg" alt="">
+      <div class="sm-id">
+        <strong>Nabila Syafika Firdaus</strong>
+        <span>SMK TKJ &middot; Rangkasbitung</span>
+      </div>
+    </div>
+    <div class="sm-cols">
+      <div class="sm-left">
+        <button class="sm-item" data-open="about"><svg aria-hidden="true"><use href="#i-about"/></svg>Tentang Saya</button>
+        <button class="sm-item" data-open="exp"><svg aria-hidden="true"><use href="#i-folder"/></svg>Pengalaman Kerja</button>
+        <button class="sm-item" data-open="edu"><svg aria-hidden="true"><use href="#i-book"/></svg>Pendidikan &amp; Keahlian</button>
+        <button class="sm-item" data-open="contact"><svg aria-hidden="true"><use href="#i-mail"/></svg>Kontak</button>
+        <div class="sm-sep" role="separator"></div>
+        <button class="sm-item" data-open="tour"><svg aria-hidden="true"><use href="#i-cat"/></svg>Tur Cerita</button>
+        <button class="sm-item" data-open="terminal"><svg aria-hidden="true"><use href="#i-terminal"/></svg>Terminal</button>
+      </div>
+      <div class="sm-right">
+        <h3>Jelajahi</h3>
+        <button class="sm-item sub" data-open="photo">Foto Saya</button>
+        <button class="sm-item sub" data-open="recycle">Tempat Sampah</button>
+        <button class="sm-item sub" data-open="display">Properti Tampilan</button>
+        <button class="sm-item sub" data-open="help">Bantuan &amp; Cara Pakai</button>
+      </div>
+    </div>
+    <div class="sm-foot">
+      <button id="logoffbtn" class="sm-foot-btn"><svg aria-hidden="true"><use href="#i-user"/></svg>Log Off</button>
+      <button id="shutdownbtn" class="sm-foot-btn"><svg aria-hidden="true"><use href="#i-power"/></svg>Matikan Komputer</button>
+    </div>
+  </div>
+
+  <aside id="mochi" hidden aria-label="Mochi, kucing pemandu">
+    <div class="bubble" id="mochi-bubble">
+      <div class="bubble-text" id="bubble-text" role="status"></div>
+      <div class="bubble-actions">
+        <button id="bubble-next" class="xbtn default"></button>
+        <button id="bubble-skip" class="xbtn">Lewati</button>
+      </div>
+    </div>
+    <button id="mochi-cat" class="mochi-cat" aria-label="Mochi, klik untuk bantuan">
+      <img src="assets/img/mochi.png" alt="" draggable="false">
+    </button>
+  </aside>
+
+  <div id="toasts" aria-live="polite"></div>
+  <p id="live" class="sr-only" aria-live="polite"></p>
+</div>
+
+<!-- ===== Dialog matikan komputer ===== -->
+<div id="modal" hidden>
+  <div id="shutdown-dialog" role="dialog" aria-modal="true" aria-labelledby="sd-title">
+    <div class="sd-top">
+      <div class="sd-side"><svg aria-hidden="true"><use href="#i-power"/></svg></div>
+      <div class="sd-text">
+        <h2 id="sd-title">Matikan Komputer</h2>
+        <p>Pilih salah satu tindakan:</p>
+      </div>
+    </div>
+    <div class="sd-actions">
+      <button id="sd-standby" class="sd-btn"><svg aria-hidden="true"><use href="#i-standby"/></svg><span>Standby</span></button>
+      <button id="sd-off" class="sd-btn"><svg aria-hidden="true"><use href="#i-power"/></svg><span>Matikan</span></button>
+      <button id="sd-restart" class="sd-btn"><svg aria-hidden="true"><use href="#i-restart"/></svg><span>Mulai Ulang</span></button>
+    </div>
+    <div class="sd-foot"><button id="sd-cancel" class="xbtn">Batal</button></div>
+  </div>
+</div>
+
+<section id="shutdown" class="screen" hidden aria-label="Layar mati">
+  <div class="shutdown-inner">
+    <svg class="shutdown-flag" aria-hidden="true"><use href="#i-flag"/></svg>
+    <h2 id="shutdown-title">Menutup sesi...</h2>
+    <p id="shutdown-note" hidden>Terima kasih sudah mampir ke desktop Nabila. Sampai jumpa lagi!</p>
+    <button id="wake-btn" class="power-btn small" hidden aria-label="Hidupkan kembali">
+      <svg class="power-glyph" aria-hidden="true"><use href="#i-power"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ===== Isi jendela ===== -->
+<template id="tpl-about">
+  <div class="about">
+    <div class="about-head">
+      <img class="about-photo" src="assets/img/photo.jpg" alt="Foto Nabila Syafika Firdaus">
+      <div class="about-id">
+        <h2>Nabila Syafika Firdaus</h2>
+        <p class="about-sub">Lulusan SMK Teknik Komputer dan Jaringan &middot; Rangkasbitung</p>
+        <p class="about-tag">Terbuka untuk peluang kerja dan kolaborasi</p>
+      </div>
+    </div>
+    <p>Saya lulusan SMK Teknik Komputer dan Jaringan (TKJ) dengan pengalaman kerja di bidang administrasi, operasional produksi, dan desain grafis.</p>
+    <p>Saya terbiasa menangani pengolahan data, administrasi transaksi B2B/B2C, pengelolaan dokumen, serta pengoperasian perangkat jaringan dan aplikasi penunjang kerja.</p>
+    <p>Saya memiliki ketelitian tinggi, kemampuan komunikasi yang baik, serta adaptif dalam lingkungan kerja mandiri maupun tim.</p>
+    <div class="about-meta">
+      <span><svg aria-hidden="true"><use href="#i-book"/></svg>SMK PGRI Rangkasbitung</span>
+      <span><svg aria-hidden="true"><use href="#i-folder"/></svg>3 pengalaman kerja</span>
+      <span><svg aria-hidden="true"><use href="#i-cat"/></svg>Ditemani Mochi</span>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-exp">
+  <div class="tabs" data-tabs>
+    <div class="tabbar" role="tablist" aria-label="Pengalaman kerja">
+      <button role="tab" class="tab" id="tab-exp-sum" aria-controls="exp-sum" aria-selected="true" data-tab="exp-sum"><svg aria-hidden="true"><use href="#i-folder"/></svg>Ringkasan</button>
+      <button role="tab" class="tab" id="tab-exp-1" aria-controls="exp-1" aria-selected="false" tabindex="-1" data-tab="exp-1"><svg aria-hidden="true"><use href="#i-pen"/></svg>Sketsa Design</button>
+      <button role="tab" class="tab" id="tab-exp-2" aria-controls="exp-2" aria-selected="false" tabindex="-1" data-tab="exp-2"><svg aria-hidden="true"><use href="#i-gear"/></svg>PT Lebak Maju Sukses</button>
+      <button role="tab" class="tab" id="tab-exp-3" aria-controls="exp-3" aria-selected="false" tabindex="-1" data-tab="exp-3"><svg aria-hidden="true"><use href="#i-clipboard"/></svg>Iruma Teknologi</button>
+    </div>
+
+    <div class="tabpanel" id="exp-sum" role="tabpanel" aria-labelledby="tab-exp-sum">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-when">Des 2022 - Jun 2023</div>
+          <div class="tl-card">
+            <span class="tl-badge design">SD</span>
+            <div><h3>Magang Desain Grafis</h3><p>Sketsa Design Grafis</p></div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-when">Nov 2024 - Jan 2025</div>
+          <div class="tl-card">
+            <span class="tl-badge ops">LM</span>
+            <div><h3>Operator</h3><p>PT Lebak Maju Sukses</p></div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-when">Sep 2025 - Mar 2026</div>
+          <div class="tl-card">
+            <span class="tl-badge adm">IT</span>
+            <div><h3>Admin</h3><p>Iruma Teknologi Nusantara</p></div>
+          </div>
+        </div>
+      </div>
+      <p class="hint">Klik tab di atas untuk membaca detail setiap pengalaman.</p>
+    </div>
+
+    <div class="tabpanel" id="exp-1" role="tabpanel" aria-labelledby="tab-exp-1" hidden>
+      <div class="job-head">
+        <span class="job-logo design">SD</span>
+        <div><h3>Magang Desain Grafis</h3><p>Sketsa Design Grafis</p></div>
+        <span class="job-period">Des 2022 - Jun 2023</span>
+      </div>
+      <p class="job-desc">Perusahaan percetakan dan desain grafis.</p>
+      <ul class="job-list">
+        <li>Merancang dan memproduksi kebutuhan percetakan seperti desain undangan, stiker, dan banner menggunakan CorelDraw.</li>
+        <li>Berkomunikasi secara efektif dengan pelanggan untuk memahami kebutuhan desain dan memastikan hasil akhir sesuai ekspektasi klien.</li>
+        <li>Mengoperasikan perangkat percetakan secara efisien untuk menyelesaikan pesanan tepat waktu.</li>
+      </ul>
+      <div class="job-foot">Periode magang: Desember 2022 sampai Juni 2023</div>
+    </div>
+
+    <div class="tabpanel" id="exp-2" role="tabpanel" aria-labelledby="tab-exp-2" hidden>
+      <div class="job-head">
+        <span class="job-logo ops">LM</span>
+        <div><h3>Operator</h3><p>PT Lebak Maju Sukses</p></div>
+        <span class="job-period">Nov 2024 - Jan 2025</span>
+      </div>
+      <p class="job-desc">Produsen pakaian dalam skala besar.</p>
+      <ul class="job-list">
+        <li>Mengoperasikan mesin jahit dan mesin obras sesuai dengan standar prosedur operasional (SOP) perusahaan.</li>
+        <li>Menjaga kualitas produk tekstil skala besar dengan memastikan ketepatan, kerapian, dan standar mutu jahitan.</li>
+        <li>Mencapai target produksi harian secara konsisten dengan tetap mengutamakan efisiensi dan keselamatan kerja.</li>
+      </ul>
+      <div class="job-foot">Periode kerja: November 2024 sampai Januari 2025</div>
+    </div>
+
+    <div class="tabpanel" id="exp-3" role="tabpanel" aria-labelledby="tab-exp-3" hidden>
+      <div class="job-head">
+        <span class="job-logo adm">IT</span>
+        <div><h3>Admin</h3><p>Iruma Teknologi Nusantara</p></div>
+        <span class="job-period">Sep 2025 - Mar 2026</span>
+      </div>
+      <p class="job-desc">Perusahaan teknologi informasi: pengembangan perangkat lunak dan solusi IoT.</p>
+      <ul class="job-list">
+        <li>Mengelola dan mengarsipkan dokumen perusahaan secara akurat untuk mendukung kelancaran operasional harian.</li>
+        <li>Melakukan pencatatan dan input data transaksi penjualan serta penagihan (billing) untuk segmen B2B dan B2C.</li>
+        <li>Berkoordinasi dengan tim internal dalam memverifikasi data transaksi guna meminimalkan kesalahan pelaporan.</li>
+      </ul>
+      <div class="job-foot">Periode kerja: September 2025 sampai Maret 2026</div>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-edu">
+  <div class="tabs" data-tabs>
+    <div class="tabbar" role="tablist" aria-label="Pendidikan dan keahlian">
+      <button role="tab" class="tab" id="tab-edu-pend" aria-controls="edu-pend" aria-selected="true" data-tab="edu-pend"><svg aria-hidden="true"><use href="#i-book"/></svg>Pendidikan</button>
+      <button role="tab" class="tab" id="tab-edu-skill" aria-controls="edu-skill" aria-selected="false" tabindex="-1" data-tab="edu-skill"><svg aria-hidden="true"><use href="#i-gear"/></svg>Keahlian</button>
+    </div>
+
+    <div class="tabpanel" id="edu-pend" role="tabpanel" aria-labelledby="tab-edu-pend">
+      <div class="edu-card">
+        <span class="edu-logo">TKJ</span>
+        <div>
+          <h3>SMK PGRI Rangkasbitung</h3>
+          <p>Teknik Komputer dan Jaringan &middot; Juli 2021 - Mei 2024</p>
+        </div>
+      </div>
+      <p>Di SMK saya mempelajari dasar-dasar jaringan komputer, konfigurasi perangkat, sistem operasi, serta troubleshooting hardware dan software.</p>
+      <p>Bekal itu saya bawa ke dunia kerja: dari magang desain grafis, produksi, sampai administrasi dan pengolahan data.</p>
+    </div>
+
+    <div class="tabpanel" id="edu-skill" role="tabpanel" aria-labelledby="tab-edu-skill" hidden>
+      <div class="skill-group">
+        <h3>Administrasi &amp; Perkantoran</h3>
+        <ul class="chips">
+          <li>Pengolahan data</li><li>Manajemen dokumen</li><li>Administrasi transaksi (B2B/B2C)</li><li>Pencatatan tagihan</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Teknis &amp; Jaringan</h3>
+        <ul class="chips">
+          <li>Konfigurasi Mikrotik (VirtualBox, Linux Debian)</li><li>Cisco Packet Tracer (setup LAN &amp; WAN)</li><li>Troubleshooting dasar</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Desain &amp; Kreatif (2024)</h3>
+        <ul class="chips">
+          <li>CorelDraw</li><li>Desain grafis percetakan</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools &amp; Software</h3>
+        <ul class="chips">
+          <li>Microsoft Office (Word, Excel)</li><li>Google Workspace</li><li>Cisco Packet Tracer</li><li>Mikrotik</li><li>CorelDraw</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Sikap Kerja</h3>
+        <ul class="chips">
+          <li>Ketelitian tinggi</li><li>Komunikasi baik</li><li>Adaptif</li><li>Mandiri &amp; kerja tim</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-contact">
+  <div class="contact">
+    <svg class="contact-big" aria-hidden="true"><use href="#i-mail"/></svg>
+    <h3>Hubungi Nabila</h3>
+    <ul class="contact-list">
+      <li><span class="cl-label">Email</span><a href="mailto:nabilasyafika499@gmail.com">nabilasyafika499@gmail.com</a></li>
+      <li><span class="cl-label">Telepon / WhatsApp</span><a href="tel:+6289666482753">0896-6648-2753</a></li>
+      <li><span class="cl-label">Lokasi</span><span>Rangkasbitung</span></li>
+    </ul>
+    <p class="muted">Terbuka untuk peluang kerja dan kolaborasi.</p>
+  </div>
+</template>
+
+<template id="tpl-terminal">
+  <div class="term">
+    <div class="term-out" id="term-out" tabindex="0" aria-label="Keluaran terminal">NabilaXP Command Prompt [Versi 1.0.2026]
+(c) 2026 Nabila Syafika Firdaus. Ketik "bantuan" untuk daftar perintah.</div>
+    <div class="term-line">
+      <span class="term-prompt" aria-hidden="true">Nabila:\&gt;</span>
+      <input id="term-in" class="term-in" autocomplete="off" spellcheck="false" aria-label="Ketik perintah terminal">
+    </div>
+  </div>
+</template>
+
+<template id="tpl-recycle">
+  <div class="explorer">
+    <div class="ex-bar">
+      <svg aria-hidden="true"><use href="#i-bin"/></svg>
+      <span class="ex-addr">Tempat Sampah</span>
+    </div>
+    <div class="ex-body">
+      <ul class="ex-list" id="bin-list">
+        <li class="ex-item" id="bin-item">
+          <svg aria-hidden="true"><use href="#i-file"/></svg>
+          <div class="ex-item-text">
+            <strong>ragu-diri.txt</strong>
+            <span>0 KB &middot; dihapus beberapa waktu lalu</span>
+          </div>
+        </li>
+      </ul>
+      <div class="ex-empty" id="bin-empty" hidden>
+        <svg aria-hidden="true"><use href="#i-bin"/></svg>
+        <p><strong>Tempat sampah kosong.</strong></p>
+        <p>Bersih. Tidak ada keraguan yang tersisa di sini.</p>
+      </div>
+    </div>
+    <div class="ex-foot">
+      <button id="bin-restore" class="xbtn">Pulihkan</button>
+      <button id="bin-empty-btn" class="xbtn">Kosongkan</button>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-photo">
+  <div class="viewer">
+    <div class="viewer-canvas">
+      <img id="viewer-img" src="assets/img/photo.jpg" alt="Foto Nabila Syafika Firdaus">
+    </div>
+    <div class="viewer-bar">
+      <button id="vw-zoomout" class="xbtn">Perkecil</button>
+      <button id="vw-zoomin" class="xbtn">Perbesar</button>
+      <button id="vw-rotl" class="xbtn">Putar Kiri</button>
+      <button id="vw-rotr" class="xbtn">Putar Kanan</button>
+      <span id="vw-zoomlabel" class="vw-label">100%</span>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-display">
+  <div class="disp">
+    <p class="disp-label">Tema jendela:</p>
+    <label class="disp-opt">
+      <input type="radio" name="theme" value="luna" class="th-radio">
+      <span><b>Tema Luna</b><br><i>Tampilan khas Windows XP</i></span>
+    </label>
+    <label class="disp-opt">
+      <input type="radio" name="theme" value="classic" class="th-radio">
+      <span><b>Tema Klasik</b><br><i>Gaya jendela abu-abu jadul</i></span>
+    </label>
+    <div class="disp-preview" id="disp-preview" aria-hidden="true">
+      <div class="mini">
+        <div class="mini-title">Contoh Jendela</div>
+        <div class="mini-body"><span class="mini-btn">OK</span></div>
+      </div>
+    </div>
+    <div class="disp-foot"><button id="disp-ok" class="xbtn default">OK</button></div>
+  </div>
+</template>
+
+<template id="tpl-help">
+  <div class="help">
+    <h3>Cara pakai desktop ini</h3>
+    <ul>
+      <li><b>Ikon desktop:</b> klik dua kali untuk membuka. Di layar sentuh cukup sekali sentuh.</li>
+      <li><b>Menu start:</b> semua halaman bisa dibuka dari sini.</li>
+      <li><b>Jendela:</b> geser lewat bilah judulnya, tutup dengan tombol X atau tombol Esc.</li>
+      <li><b>Terminal:</b> ketik <b>bantuan</b> untuk melihat daftar perintah.</li>
+      <li><b>Tur Cerita:</b> ikuti tur singkat bersama Mochi dari ikon kucing di kanan bawah.</li>
+    </ul>
+    <h3>Tentang situs ini</h3>
+    <p>Portofolio ini dibuat sebagai desktop interaktif. Semua isinya berasal dari data pemiliknya, tanpa angka atau klaim tambahan.</p>
+    <p class="help-credits">Dibuat dengan HTML, CSS, dan JavaScript tanpa kerangka kerja, disajikan oleh Python dari laptop sendiri. Tidak ada pelacakan dan tidak butuh internet.</p>
+  </div>
+</template>
+
+<noscript>
+  <div class="noscript">
+    <h1>Nabila Syafika Firdaus</h1>
+    <p>Lulusan SMK Teknik Komputer dan Jaringan (TKJ) dengan pengalaman di bidang administrasi, operasional produksi, dan desain grafis. Berbasis di Rangkasbitung.</p>
+    <h2>Pengalaman kerja</h2>
+    <ul>
+      <li>Magang Desain Grafis, Sketsa Design Grafis (Desember 2022 - Juni 2023)</li>
+      <li>Operator, PT Lebak Maju Sukses (November 2024 - Januari 2025)</li>
+      <li>Admin, Iruma Teknologi Nusantara (September 2025 - Maret 2026)</li>
+    </ul>
+    <h2>Kontak</h2>
+    <ul>
+      <li>Email: nabilasyafika499@gmail.com</li>
+      <li>Telepon: 0896-6648-2753</li>
+      <li>Lokasi: Rangkasbitung</li>
+    </ul>
+    <p>Aktifkan JavaScript untuk melihat versi interaktifnya.</p>
+  </div>
+</noscript>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>

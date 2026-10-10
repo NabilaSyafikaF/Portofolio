@@ -1,0 +1,7 @@
+# Berkas sistem macOS
+.DS_Store
+**/.DS_Store
+
+# Konfigurasi agen AI lokal (tidak ikut dipublikasikan)
+.opencode/
+AGENTS.md
